@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    font-family: Helvetica, sans-serif;
+} */
+
+.container {}
+
+.header {
+    --height: 87px;
+    background-color: #fff;
+    position: fixed;
+    height: var(--height);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 0 10px;
+    box-shadow: 0 0 15px 0;
+
+
+}
+
+.logo {
+   
+  max-width: 200px;
+  margin: 10px 10px 0 10px;
+}
+
+.logo img{
+    width: 100%;
+    
+    animation: example 20s infinite ease-in-out;
+    
+}
+.nav>li:hover> a {
+    width: 100%;
+    
+    animation: example 10s infinite ease-in-out;
+    
+}
+
+@keyframes example {
+    35%, 100% {
+        transform: scale(1);
+    }
+    10% {
+        transform: rotateX(360deg) scale(1);
+    }
+
+}
+
+.logo img {
+    width: 100%;
+   
+}
+
+.nav {
+    display: inline-block;
+   
+
+
+}
+
+.nav,
+.subnav {
+    list-style-type: none;
+}
+
+.nav>li {
+    display: inline-block;
+}
+
+
+
+.nav>li>a {
+    color: #000000;
+    text-transform: uppercase;
+
+}
+
+.nav li a {
+
+    text-decoration: none;
+    padding: 0 1rem;
+    display: block;
+    line-height: var(--height);
+    font-weight: 800;
+} 
+.nav li:hover .subnav {
+    display: block;
+}
+
+
+.nav>li:first-child a{ color: #fff;
+    background-color: red;
+
+}
+
+/* .nav .subnav {
+    display: none;
+   
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 10px 0;
+    background-color: #fff;
+    min-width: 160px;
+}
+
+.nav .subnav a {
+    line-height: 38px;
+    padding: 0 12px;
+    color: #000000;
+}
+
+.nav .subnav a:hover{
+    display: block;
+}  */
+/* @media screen and (max-width:800px){
+    .header{
+        height: 15rem;
+    }
+} */
+ .search-button {
+    line-height: 87px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.search-button .search input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 16px;
+    border: 1px solid gainsboro;
+}
+.search-button .search >button{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    border-radius: 5px;
+  line-height: 40px;
+    text-decoration: none;
+    font-weight: 800;
+}
+.search-button .button-login a{
+    padding: 10px 10px;
+    margin: 0 25px;
+    background-color: red;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.button-logout a{
+    padding: 10px 10px;
+    margin: 0 25px;
+    background-color: red;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    line-height: 86px;
+}
+.button-logout a:hover{
+
+    color: #fff;
+
+}
+.slider {
+    position: relative;
+    margin-top: 87px;
+
+}
+
+.slider .banner-active {}
+
+.slider .banner-active img {
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.slider .text-content {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%)
+    
+}
+.slider .text-content h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+}
+.slider .text-content p{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+.item-img img{
+    width: 100%;
+    
+}
+
+.one .products{
+    transition-duration: 0.5s;
+}
+.one .products:hover{
+    box-shadow: 0 0 20px 0;
+    
+}
+.one .text h1:hover{
+    color: red;
+    cursor: pointer;
+}
+.one .text-small span{
+    font-size: 1.2rem;
+}
+
+.one .products .item-img:hover img{
+    width: 100%;
+    
+    animation: example 10s infinite ease-in-out;
+    
+}
+@keyframes example {
+    35%, 100% {
+        transform: scale(1);
+    }
+    10% {
+        transform: rotateX(360deg) scale(1);
+    }
+
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5rem;
+  }
+  #btn{
+    position: absolute;
+    z-index: 3;
+    display: none;
+    bottom: 0;
+  }
+.content {}
+
+.footer {}
